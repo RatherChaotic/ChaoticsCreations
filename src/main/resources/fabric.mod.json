@@ -1,29 +1,32 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "chaoticcreations",
   "version": "${version}",
 
-  "name": "Example Mod",
+  "name": "Chaotic's Creations",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
-    "Me!"
+    "RatherChaotic"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "MIT Licences",
+  "icon": "assets/chaoticcreations/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.chaotic.chaoticcreations.ChaoticCreations"
+    ],
+    "client": [
+      "net.chaotic.chaoticcreations.ChaoticCreationsClient"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "chaoticcreations.mixin.json"
   ],
 
   "depends": {
